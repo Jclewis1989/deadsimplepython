@@ -47,10 +47,10 @@ Welcome to my GitHub repository dedicated to my journey through "Dead Simple Pyt
 ## Usage
 
 To use this repository effectively:
-- Navigate to the `chapters` directory to find organized examples by chapter.
+- Navigate to the `parts` directory to find organized examples by chapter.
 - Run Python scripts to see the concepts in action:
   ```bash
-  python chapters/chapter1/example1.py
+  python parts/chapter1/script.py
   ```
 
 ## Learning Journey Log
