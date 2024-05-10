@@ -122,3 +122,40 @@ It is recommended to avoid installing packages system-wide unless necessary, as 
 - **Always use virtual environments** to isolate project dependencies.
 - **Avoid using `sudo pip`** to prevent potential conflicts and security risks.
 - **Keep your tools updated** to ensure you have the latest security fixes and improvements.
+
+## Python Code Style Guide: PEP8
+
+### Tabs vs. Spaces
+PEP8, the Python style guide, recommends using spaces instead of tabs for indentation. Specifically, it suggests using 4 spaces per indentation level. This convention is widely adopted in the Python community and helps ensure that code is consistent and readable across different environments and editors.
+
+### Quality Control with Pylint
+Pylint is a popular static code analyzer for Python that helps programmers identify potential errors in their Python code. It also checks for adherence to the coding standards specified in PEP8.
+
+#### Using Pylint
+To use Pylint, install it via pip if it is not already installed:
+```bash
+pip install pylint
+```
+Once installed, you can run Pylint on a Python script as follows:
+```bash
+pylint script_name.py
+```
+Pylint will analyze your code and provide a report detailing warnings, errors, and stylistic issues based on the PEP8 guidelines.
+
+### Code Formatting with Black
+Black is a highly opinionated code formatter that reformats entire files in place to ensure they are in compliance with the PEP8 standards. Black makes code review faster by producing the smallest diffs possible.
+
+#### Installing Black
+Install Black using pip:
+```bash
+pip install black
+```
+
+#### Using Black
+To format a Python script, simply run:
+```bash
+black script_name.py
+```
+Black will reformat your script according to its style standards, which are a strict subset of PEP8.
+
+By using tools like Pylint and Black, developers can maintain high-quality, clean code that is easy to read and maintain. These tools help to enforce a uniform coding style, making collaborative development smoother and more efficient.
